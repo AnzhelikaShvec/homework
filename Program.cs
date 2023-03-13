@@ -16,4 +16,4 @@ else
     int max = b;
     Console.WriteLine("b");
 }
-  
+  не работает(
