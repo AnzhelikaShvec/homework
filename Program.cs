@@ -3,17 +3,12 @@
 // a = 5; b = 7 -> max = 7
 // a = 2 b = 10 -> max = 10
 // a = -9 b = -3 -> max = -3
+
 Console.WriteLine("Введите два числа поочередно через пробел");
 int a = Convert.ToInt32(Console.Read());
 int b = Convert.ToInt32(Console.ReadLine());
-if(a > b)
-{
-    int max = a;
-    Console.WriteLine("a");
-}
-else
-{
-    int max = b;
-    Console.WriteLine("b");
-}
-  не работает(
+int max = a;
+if(a > max) max = a;
+
+Console.Write("max = ");
+Console.WriteLine(max);
